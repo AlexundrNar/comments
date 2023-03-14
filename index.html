@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Комментики</h1>
+  </header>
+
+  <main>
+    <section class="comments">
+      <div class="comments__wrapper">
+        <div>
+          <button class="comment__modal">Добавить комментарий</button>
+        </div>
+
+        <div class="modal">
+          <form action="#">
+            <h3>Оставить комментарий</h3>
+            <input id="name" type="text" placeholder="Имя" required>
+            <textarea id="text" placeholder="Текст" required></textarea>
+            <input id="date" name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+            <div class="modal__buttons">
+              <button class="comment__add" type="submit">Запостить</button>
+              <button type="reset">Сбросить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="comments__list">
+        <div class="comment__block">
+          <h4>Алекс</h4>
+          <span>сегодня, 15:30</span>
+          <img class="comment__delete" src="/img/del1.svg" alt="">
+          <svg class="comment__like" width="20px" height="20px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.2 22C19.851 22 22 19.851 22 17.2C22 14.549 19.851 12.4 17.2 12.4C14.549 12.4 12.4 14.549 12.4 17.2C12.4 19.851 14.549 22 17.2 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18.99 17.26H15.41" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.2 15.51V19.1" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 8.69C22 10.66 21.49 12.4 20.69 13.91C19.81 12.98 18.57 12.4 17.2 12.4C14.55 12.4 12.4 14.55 12.4 17.2C12.4 18.43 12.87 19.55 13.63 20.4C13.26 20.57 12.92 20.71 12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69C2 5.6 4.49 3.09998 7.56 3.09998C9.37 3.09998 10.99 3.98002 12 5.33002C13.01 3.98002 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.6 22 8.69Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum molestiae fugiat, odio recusandae
+            aperiam saepe soluta officiis ut laudantium. Illum quod, cumque qui ducimus quis deleniti blanditiis quam
+            veritatis?</p>
+        </div>
+        <div class="comment__block">
+          <h4>Саша</h4>
+          <span>вчера, 17:40</span>
+          <img class="comment__delete" src="/img/del1.svg" alt="">
+          <svg class="comment__like" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.2 22C19.851 22 22 19.851 22 17.2C22 14.549 19.851 12.4 17.2 12.4C14.549 12.4 12.4 14.549 12.4 17.2C12.4 19.851 14.549 22 17.2 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18.99 17.26H15.41" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.2 15.51V19.1" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 8.69C22 10.66 21.49 12.4 20.69 13.91C19.81 12.98 18.57 12.4 17.2 12.4C14.55 12.4 12.4 14.55 12.4 17.2C12.4 18.43 12.87 19.55 13.63 20.4C13.26 20.57 12.92 20.71 12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69C2 5.6 4.49 3.09998 7.56 3.09998C9.37 3.09998 10.99 3.98002 12 5.33002C13.01 3.98002 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.6 22 8.69Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum molestiae fugiat, odio recusandae
+            aperiam saepe soluta officiis ut laudantium. Illum quod, cumque qui ducimus quis deleniti blanditiis quam
+            veritatis?</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/index.js"></script>
+</body>
+
+</html>
